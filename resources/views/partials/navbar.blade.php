@@ -18,13 +18,13 @@
                 class="text-sm px-4 py-3 rounded-xl hover:text-gray-900 hover:bg-gray-200/50 dark:hover:bg-gray-600/20 dark:hover:text-white  hover:scale-[1.05] active:scale-[0.95] transition">Home</a>
             <a href="/about"
                 class="text-sm px-4 py-3 rounded-xl hover:text-gray-900 hover:bg-gray-200/50 dark:hover:bg-gray-600/20 dark:hover:text-white  hover:scale-[1.05] active:scale-[0.95] transition">About</a>
-            <a href="/artikel"
-                class="text-sm px-4 py-3 rounded-xl hover:text-gray-900 hover:bg-gray-200/50 dark:hover:bg-gray-600/20 dark:hover:text-white  hover:scale-[1.05] active:scale-[0.95] transition">News/Article</a>
+            <a href="{{ route('artikel.index') }}"
+                class="text-sm px-4 py-3 rounded-xl hover:text-gray-900 hover:bg-gray-200/50 dark:hover:bg-gray-600/20 dark:hover:text-white  hover:scale-[1.05] active:scale-[0.95] transition">Article</a>
         </div>
 
         <button
             class="px-4 py-1.5 bg-black dark:bg-white text-white dark:text-black text-sm  rounded-xl hover:opacity-80 hover:scale-[1.05] active:scale-[0.95] transition">
-            Subscribe
+            Berlangganan
         </button>
     </nav>
 </header>
