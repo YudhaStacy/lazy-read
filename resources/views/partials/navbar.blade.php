@@ -1,5 +1,5 @@
 <!-- Floating Navbar -->
-<header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl">
+<header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-3xl">
     <nav
         class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200 dark:border-gray-800 rounded-2xl px-2 sm:px-5  py-2 flex items-center justify-between shadow-sm">
         <a href="/" class="flex items-center gap-2">
@@ -23,7 +23,7 @@
         </div>
 
         <button
-            class="px-4 py-1.5 bg-black dark:bg-white text-white dark:text-black text-sm  rounded-xl hover:opacity-80 hover:scale-[1.05] active:scale-[0.95] transition">
+            class="px-4 py-1.5 bg-black dark:bg-white text-white dark:text-black text-sm  rounded-xl hover:opacity-80 hover:scale-[1.05] active:scale-[0.95] transition cursor-pointer">
             Berlangganan
         </button>
     </nav>

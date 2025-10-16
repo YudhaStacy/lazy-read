@@ -20,17 +20,16 @@ class ArtikelFaker extends Seeder
         // 1. Buat 5 kategori dengan Faker
         $kategoriIds = [];
         for ($i = 0; $i < 5; $i++) {
-            $namaKategori = $faker->unique()->word(); // misalnya: "travel", "finance", dll
+            $namaKategori = $faker->unique()->word();
 
             $kategori = Kategori::create([
                 'nama' => ucfirst($namaKategori),
                 'slug' => Str::slug($namaKategori),
             ]);
 
-            $kategoriIds[] = $kategori->id_kategori; // simpan id-nya untuk digunakan nanti
+            $kategoriIds[] = $kategori->id_kategori;
         }
 
-        // 2. Buat 10 artikel dengan kategori acak dari hasil di atas
         for ($i = 0; $i < 10; $i++) {
             $judul = $faker->sentence;
 

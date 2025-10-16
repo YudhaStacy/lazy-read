@@ -15,6 +15,6 @@ class BerandaController extends Controller
             ->take(3)
             ->get();
 
-        return view('beranda', compact('artikel'));
+        return view('pages.beranda', compact('artikel'));
     }
 }

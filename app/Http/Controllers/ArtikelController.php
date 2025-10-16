@@ -13,26 +13,33 @@ class ArtikelController extends Controller
     {
         $artikel = Artikel::with('kategori')
             ->orderBy('published_at', 'desc')
-            ->paginate(6);
+            ->get();
 
-        $kategori = Kategori::orderBy('nama')->get();
+        $kategori = Kategori::all();
 
-        return view('artikel', compact('artikel', 'kategori'));
+        return view('pages.artikel', compact('artikel', 'kategori'));
     }
-
     public function show($slug)
     {
-        $artikel = Artikel::with('Kategori')
+        $artikel = Artikel::with('kategori')
             ->where('slug', $slug)
             ->firstOrFail();
 
-        // Artikel terkait berdasarkan kategori yang sama
-        $related = Artikel::where('kategori_id', $artikel->Kategori_id)
-            ->where('id', '!=', $artikel->id)
-            ->latest()
-            ->take(3)
+        return view('artikel.show', compact('artikel'));
+    }
+
+
+    public function filterByKategori($slug)
+    {
+        $kategoriObj = Kategori::where('slug', $slug)->firstOrFail();
+
+        $artikel = Artikel::with('kategori')
+            ->where('id_kategori', $kategoriObj->id_kategori)
+            ->orderBy('published_at', 'desc')
             ->get();
 
-        return view('Artikels.show', compact('artikel', 'related'));
+        $kategori = Kategori::all();
+
+        return view('pages.artikel', compact('artikel', 'kategori'));
     }
 }

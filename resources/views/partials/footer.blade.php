@@ -1,7 +1,7 @@
 <!-- Footer -->
-<footer class="py-12 px-6 border-t border-gray-200 dark:border-gray-800">
+<footer class="px-6 py-12 border-t border-gray-200 dark:border-gray-800">
     <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-[1fr_2fr] gap-8 mb-8 items-start">
+        <div class="grid grid-cols-2 sm:grid-cols-[1fr_2fr] gap-8 mb-8 items-start">
             <!-- Kiri: Logo + deskripsi + sosial -->
             <div class="flex flex-col justify-between h-full">
                 <div>
@@ -12,16 +12,16 @@
                             <path
                                 d="M13.343 2A6 6 0 0 0 21 9.657V21a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 18.5V5a3 3 0 0 1 3-3zM6.5 17a1.5 1.5 0 0 0 0 3H19v-3zM18.53.33a.507.507 0 0 1 .94 0l.254.61a4.37 4.37 0 0 0 2.25 2.327l.718.32a.53.53 0 0 1 0 .962l-.76.338a4.36 4.36 0 0 0-2.218 2.25l-.247.566a.506.506 0 0 1-.934 0l-.246-.565a4.36 4.36 0 0 0-2.22-2.251l-.76-.338a.53.53 0 0 1 0-.963l.718-.32A4.37 4.37 0 0 0 18.276.942z" />
                         </svg>
-                        <span class="font-medium text-lg">LazyRead</span>
+                        <span class="text-lg font-medium">LazyRead</span>
                     </div>
                     <!-- Deskripsi -->
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">LazyRead hadir untuk kamu yang ingin tahu
+                    <p class="mb-6 text-sm text-gray-600 dark:text-gray-400">LazyRead hadir untuk kamu yang ingin tahu
                         tanpa terburu-buru. </p>
                 </div>
 
                 <div class="flex gap-2 mt-auto">
                     <!-- Github -->
-                    <span class="[&>svg]:h-5 [&>svg]:w-5">
+                    <span class="[&>svg]:h-5 [&>svg]:w-5 ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
                             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
                             <path
@@ -49,11 +49,11 @@
 
             <!-- Kanan: Quick Links -->
             <div class="text-right">
-                <h4 class="font-medium mb-3">Quick Links</h4>
-                <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 inline-block text-left">
-                    <li><a href="#" class="hover:text-gray-900 dark:hover:text-white transition">Home</a></li>
-                    <li><a href="#" class="hover:text-gray-900 dark:hover:text-white transition">About</a></li>
-                    <li><a href="#" class="hover:text-gray-900 dark:hover:text-white transition">Article</a></li>
+                <h4 class="mb-3 font-medium">Quick Links</h4>
+                <ul class="inline-block space-y-2 text-sm text-left text-gray-600 dark:text-gray-400">
+                    <li><a href="#" class="transition hover:text-gray-900 dark:hover:text-white">Home</a></li>
+                    <li><a href="#" class="transition hover:text-gray-900 dark:hover:text-white">About</a></li>
+                    <li><a href="#" class="transition hover:text-gray-900 dark:hover:text-white">Article</a></li>
                 </ul>
             </div>
         </div>
